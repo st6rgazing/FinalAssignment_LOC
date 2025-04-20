@@ -1,0 +1,166 @@
+x<!DOCTYPE HTML>
+<html>
+<head>
+  <title>Book With Us - Sunset Voyages</title>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+  <link rel="stylesheet" href="assets/css/main.css" />
+</head>
+<body class="is-preload">
+  <div id="page-wrapper">
+
+    <!-- Header -->
+    <header id="header">
+      <h1><a href="index.html">Sunset Voyages</a></h1>
+      <nav id="nav">
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="learn-more.html">Learn More</a></li>
+          <li><a href="book.html">Book</a></li>
+          <li><a href="contact.html">Contact</a></li>
+          <li><a href="login.html" class="button">Login</a></li>
+          <li><a href="signup.html" class="button primary">Sign Up</a></li>
+        </ul>
+      </nav>
+      
+      
+    </header>
+
+    <!-- Main -->
+    <section id="main" class="container medium">
+      <header>
+        <h2>Book Your Trip</h2>
+        <p>Plan your next unforgettable journey with us</p>
+      </header>
+
+      <section style="margin-top: 0; padding-top: 0;">
+        <span class="image fit"><img src="images/image07.jpeg" alt="Travel Image 1" /></span>
+      </section>
+      
+
+      <div class="box">
+        <form method="post" action="#">
+          <div class="row gtr-50 gtr-uniform">
+
+            <!-- Destination -->
+            <div class="col-12">
+              <label for="destination">Choose Destination</label>
+              <select name="destination" id="destination" required>
+                <option value="">- Select Destination -</option>
+                <option value="bali">Bali, Indonesia</option>
+                <option value="paris">Paris, France</option>
+                <option value="cairo">Cairo, Egypt</option>
+                <option value="tokyo">Tokyo, Japan</option>
+                <option value="newyork">New York, USA</option>
+              </select>
+            </div>
+
+            <!-- Travel Type -->
+            <div class="col-12">
+              <label>Type of Trip</label>
+              <input type="radio" id="solo" name="tripType" value="solo" checked>
+              <label for="solo">Solo</label>
+              <input type="radio" id="couple" name="tripType" value="couple">
+              <label for="couple">Couple</label>
+              <input type="radio" id="family" name="tripType" value="family">
+              <label for="family">Family</label>
+              <input type="radio" id="group" name="tripType" value="group">
+              <label for="group">Group</label>
+            </div>
+
+            <!-- Travelers & Dates -->
+            <div class="col-6 col-12-mobilep">
+              <label for="travelers">Number of Travelers</label>
+              <input type="number" name="travelers" id="travelers" min="1" max="20" value="1" required />
+            </div>
+            <div class="col-6 col-12-mobilep">
+              <label for="date">Preferred Departure Date</label>
+              <input type="date" name="date" id="date" required />
+            </div>
+
+            <!-- Accommodation -->
+            <div class="col-12">
+              <label for="accommodation">Accommodation Preference</label>
+              <select name="accommodation" id="accommodation" required>
+                <option value="">- Select -</option>
+                <option value="budget">Budget Hotel</option>
+                <option value="standard">Standard 3★</option>
+                <option value="luxury">Luxury 5★</option>
+                <option value="villa">Private Villa</option>
+              </select>
+            </div>
+
+            <!-- Add-ons -->
+            <div class="col-12">
+              <label>Additional Services</label>
+              <input type="checkbox" id="insurance" name="addons" value="insurance">
+              <label for="insurance">Travel Insurance</label>
+              <input type="checkbox" id="tourguide" name="addons" value="tourguide">
+              <label for="tourguide">Local Tour Guide</label>
+              <input type="checkbox" id="airport" name="addons" value="airport">
+              <label for="airport">Airport Pickup</label>
+              <input type="checkbox" id="meals" name="addons" value="meals">
+              <label for="meals">All-Inclusive Meals</label>
+            </div>
+
+            <!-- Image Section -->
+            <div class="col-12">
+              <span class="image fit"><img src="images/image08.jpg" alt="Travel Image 2" /></span>
+            </div>
+
+            <!-- Personal Info -->
+            <div class="col-6 col-12-mobilep">
+              <label for="name">Full Name</label>
+              <input type="text" name="name" id="name" placeholder="Your Full Name" required />
+            </div>
+            <div class="col-6 col-12-mobilep">
+              <label for="email">Email Address</label>
+              <input type="email" name="email" id="email" placeholder="you@example.com" required />
+            </div>
+            <div class="col-12">
+              <label for="phone">Phone Number</label>
+              <input type="tel" name="phone" id="phone" placeholder="+1 234 567 8901" />
+            </div>
+
+            <!-- Message -->
+            <div class="col-12">
+              <label for="message">Additional Comments</label>
+              <textarea name="message" id="message" rows="5" placeholder="Tell us more about your trip..."></textarea>
+            </div>
+
+            <!-- Submit -->
+            <div class="col-12">
+              <ul class="actions special">
+                <li><input type="submit" value="Submit Booking" class="primary" /></li>
+              </ul>
+            </div>
+          </div>
+        </form>
+      </div>
+    </section>
+
+    <!-- Footer -->
+    <footer id="footer">
+      <ul class="icons">
+        <li><a href="#" class="icon brands fa-twitter"><span class="label">Twitter</span></a></li>
+        <li><a href="#" class="icon brands fa-facebook-f"><span class="label">Facebook</span></a></li>
+        <li><a href="#" class="icon brands fa-instagram"><span class="label">Instagram</span></a></li>
+      </ul>
+      <ul class="copyright">
+        <li>&copy; Sunset Voyages. All rights reserved.</li>
+        <li>Design: <a href="http://html5up.net">HTML5 UP</a></li>
+      </ul>
+    </footer>
+
+  </div>
+
+  <!-- Scripts -->
+  <script src="assets/js/jquery.min.js"></script>
+  <script src="assets/js/jquery.dropotron.min.js"></script>
+  <script src="assets/js/jquery.scrollex.min.js"></script>
+  <script src="assets/js/browser.min.js"></script>
+  <script src="assets/js/breakpoints.min.js"></script>
+  <script src="assets/js/util.js"></script>
+  <script src="assets/js/main.js"></script>
+</body>
+</html>
