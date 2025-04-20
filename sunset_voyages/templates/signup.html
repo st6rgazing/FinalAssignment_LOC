@@ -1,10 +1,10 @@
 <!DOCTYPE HTML>
 <html>
 <head>
-  <title>Learn More - Sunset Voyages</title>
+  <title>Sign Up - Sunset Voyages</title>
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
-  <link rel="stylesheet" href="assets/css/main.css" />
+  <link rel="stylesheet" href="../static/assets/css/main.css" />
 </head>
 <body class="is-preload">
   <div id="page-wrapper">
@@ -28,26 +28,34 @@
     </header>
 
     <!-- Main -->
-    <section id="main" class="container">
+    <section id="main" class="container medium">
       <header>
-        <h2>Learn More About Sunset Voyages</h2>
-        <p>Why travelers love us</p>
+        <h2>Create Your Account</h2>
+        <p>Join the Sunset Voyages community today.</p>
       </header>
       <div class="box">
-        <span class="image featured"><img src="images/pic06.jpg" alt="" /></span>
-        <h3>Your Journey, Our Passion</h3>
-        <p>Sunset Voyages is more than a travel agency — we’re your personal adventure curator. With tailored itineraries, handpicked destinations, and exceptional support, we turn your dream vacation into reality.</p>
-
-        <h3>What We Offer</h3>
-        <ul>
-          <li>🌍 Customizable trips for solo, couples, families, or corporate groups</li>
-          <li>🧳 Travel packages for beach escapes, cultural explorations, cruises & more</li>
-          <li>🤝 Partnerships with top-rated hotels, airlines, and guides worldwide</li>
-          <li>🕒 24/7 customer support throughout your journey</li>
-        </ul>
-
-        <h3>Our Mission</h3>
-        <p>We believe that travel should be personal, inspiring, and stress-free. Whether you're planning a quick getaway or a life-changing trip, Sunset Voyages is here to guide you every step of the way.</p>
+        <form method="post" action="../scripts/signup.py">
+          <div class="row gtr-50 gtr-uniform">
+            <div class="col-12">
+              <input type="text" name="name" id="name" placeholder="Full Name" />
+            </div>
+            <div class="col-12">
+              <input type="email" name="email" id="email" placeholder="Email Address" />
+            </div>
+            <div class="col-12">
+              <input type="password" name="password" id="password" placeholder="Password" />
+            </div>
+            <div class="col-12">
+              <input type="checkbox" id="newsletter" name="newsletter">
+              <label for="newsletter">Subscribe to travel updates and offers</label>
+            </div>
+            <div class="col-12">
+              <ul class="actions special">
+                <li><input type="submit" value="Create Account" class="primary" /></li>
+              </ul>
+            </div>
+          </div>
+        </form>
       </div>
     </section>
 

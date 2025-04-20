@@ -1,10 +1,10 @@
 <!DOCTYPE HTML>
 <html>
 <head>
-  <title>Contact - Sunset Voyages</title>
+  <title>Login - Sunset Voyages</title>
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
-  <link rel="stylesheet" href="assets/css/main.css" />
+  <link rel="stylesheet" href="../static/assets/css/main.css" />
 </head>
 <body class="is-preload">
   <div id="page-wrapper">
@@ -16,42 +16,39 @@
 		<ul>
 		  <li><a href="index.html">Home</a></li>
 		  <li><a href="learn-more.html">Learn More</a></li>
-		  <li><a href="book.html">Book</a></li>
 		  <li><a href="contact.html">Contact</a></li>
 		  <li><a href="login.html" class="button">Login</a></li>
-		  <li><a href="signup.html" class="button primary">Sign Up</a></li>
+		  <li><a href="signup.html" class="button white-fill">Sign Up</a></li>
 		</ul>
 	  </nav>
-	  
-	  
-	  
-	  
+      
     </header>
 
     <!-- Main -->
     <section id="main" class="container medium">
       <header>
-        <h2>Contact Us</h2>
-        <p>Have questions or need help planning your next getaway? We’d love to hear from you!</p>
+        <h2>Welcome Back</h2>
+        <p>Log in to manage your bookings and travel plans</p>
       </header>
       <div class="box">
-        <form method="post" action="#">
+        <form method="post" action="../scripts/login.py">
           <div class="row gtr-50 gtr-uniform">
-            <div class="col-6 col-12-mobilep">
-              <input type="text" name="name" id="name" placeholder="Your Name" />
-            </div>
-            <div class="col-6 col-12-mobilep">
-              <input type="email" name="email" id="email" placeholder="Your Email" />
+            <div class="col-12">
+              <input type="email" name="email" id="email" placeholder="Email Address" required />
             </div>
             <div class="col-12">
-              <input type="text" name="subject" id="subject" placeholder="Subject" />
+              <input type="password" name="password" id="password" placeholder="Password" required />
             </div>
-            <div class="col-12">
-              <textarea name="message" id="message" placeholder="How can we help you?" rows="6"></textarea>
+            <div class="col-6 col-12-mobilep">
+              <input type="checkbox" id="remember" name="remember">
+              <label for="remember">Remember me</label>
+            </div>
+            <div class="col-6 col-12-mobilep align-right">
+              <a href="#" class="small">Forgot Password?</a>
             </div>
             <div class="col-12">
               <ul class="actions special">
-                <li><input type="submit" value="Send Message" class="primary" /></li>
+                <li><input type="submit" value="Log In" class="primary" /></li>
               </ul>
             </div>
           </div>
